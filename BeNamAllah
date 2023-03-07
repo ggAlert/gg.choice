@@ -1,4 +1,4 @@
-name 'pkn'
+name = 'pkn'
 
 
 gg.alert("Yeah Men")

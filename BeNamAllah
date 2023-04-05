@@ -1,4 +1,4 @@
 name = 'pkn'
 
 
-gg.alert("Yeah Men")
+gg.alert("Yeah Men"..ver)

@@ -2,7 +2,7 @@ name = 'pkn'
 
 Date=19       -- Expiry date
 Month=7       -- Expiry month 
-Year=2022     -- Expiry year
+Year=2023     -- Expiry year
 expiremessage="Your Script is Expired"  --Expiry message 
 --This script will expire on 15/05/2020
 

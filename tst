@@ -590,7 +590,7 @@ while (true) do
 
   Date = 19
   Month = 7
-  Year = 2023
+  Year = 2022
   expiremessage = "⭕Your Script Expired \n \n--> Please send message in Telegram (my id @No_Pulse) for get new version"
 
   function check(t)
@@ -613,12 +613,17 @@ while (true) do
     gg.alert(expiremessage)
     os.exit()
   else
-    if ver == 3.0 then
+    if ver == '3.0' then
       if SAMPMENU == 1 then
         HOME()
         gg.toast("Hello " .. username)
       end
+    else
+      gg.alert("PLease use last version of LOGIN SCRIPT, Download = @Cheaters_Samp (in telegram)")
+
+
     end
+
   end
 end
 

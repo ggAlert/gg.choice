@@ -619,7 +619,7 @@ while (true) do
         gg.toast("Hello " .. username)
       end
     else
-      gg.alert("PLease use last version of LOGIN SCRIPT, Download = @Cheaters_Samp (in telegram)")
+      gg.alert("PLease use last version of LOGIN SCRIPT, Download = @Cheaters_Samp (in telegram)22")
 
 
     end

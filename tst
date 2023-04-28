@@ -590,7 +590,7 @@ while (true) do
 
   Date = 19
   Month = 7
-  Year = 2022
+  Year = 2023
   expiremessage = "⭕Your Script Expired \n \n--> Please send message in Telegram (my id @No_Pulse) for get new version"
 
   function check(t)

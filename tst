@@ -539,6 +539,48 @@ function hj2()
   gg.clearResults()
 end
 
+
+function HOME()
+  MultiMenu = gg.choice(
+    { "💥Silent Aim💥", "🏙TP To DmZone🏙", "🔫GUN FOR WAR🔫", "🎭CBUG Zed Rec🎭", "🎃Slow Motion🎃",
+      "👓Fast Run👓", "💎FPS BOOST💎", "📱Wall Hack📱", "🚑GM Car🚑", "🚀Slap🚀", "👊Fast Fist👊",
+      "👀Ipad View(360)👀", "♥God Mode♥", "👟High Jump👟", "🚫EXIT" }, nil,
+    "🔱UserName: " ..
+    username ..
+    "\n  🔰now : " ..
+    os.date("%Y") ..
+    "/" ..
+    os.date("%m") ..
+    "/" ..
+    os.date("%d") ..
+    "& 🔰Expired in = " ..
+    tostring(Year) ..
+    "/" ..
+    tostring(Month) .. "/" .. tostring(Date) ..
+    "\n🇮🇷[S]amp [C]heats\n 💯creator : @No_Pulse\n 🔰Channel : @Cheaters_Samp")
+  if MultiMenu == nil then
+    SAMPMENU = -1
+  else
+    if MultiMenu == 1 then silent() end
+    if MultiMenu == 2 then tpselector() end
+    if MultiMenu == 3 then gunwar() end
+    if MultiMenu == 4 then speedfire() end
+    if MultiMenu == 5 then slow() end
+    if MultiMenu == 6 then speedspr() end
+    if MultiMenu == 7 then fpsup() end
+    if MultiMenu == 8 then wallhack() end
+    if MultiMenu == 9 then gmcar() end
+    if MultiMenu == 10 then slap() end
+    if MultiMenu == 11 then fh() end
+    if MultiMenu == 12 then ipadView() end
+    if MultiMenu == 13 then gm() end
+    if MultiMenu == 14 then hj() end
+    if MultiMenu == 15 then EXIT() end
+  end
+  SAMPMENU = -1
+end
+
+
 while (true) do
   gg.sleep(10)
   if gg.isVisible(true) then
@@ -546,47 +588,7 @@ while (true) do
     gg.setVisible(false)
   end
 
-  HOME = 1
 
-  function HOME()
-    MultiMenu = gg.choice(
-      { "💥Silent Aim💥", "🏙TP To DmZone🏙", "🔫GUN FOR WAR🔫", "🎭CBUG Zed Rec🎭", "🎃Slow Motion🎃",
-        "👓Fast Run👓", "💎FPS BOOST💎", "📱Wall Hack📱", "🚑GM Car🚑", "🚀Slap🚀", "👊Fast Fist👊",
-        "👀Ipad View(360)👀", "♥God Mode♥", "👟High Jump👟", "🚫EXIT" }, nil,
-      "🔱UserName: " ..
-      username ..
-      "\n  🔰now : " ..
-      os.date("%Y") ..
-      "/" ..
-      os.date("%m") ..
-      "/" ..
-      os.date("%d") ..
-      "& 🔰Expired in =: " ..
-      tostring(Year) ..
-      "/" ..
-      tostring(Month) .. "/" .. tostring(Date) ..
-      "\n🇮🇷[S]amp [C]heats\n 💯creator : @No_Pulse\n 🔰Channel : @Cheaters_Samp")
-    if MultiMenu == nil then
-      HOME()
-    else
-      if MultiMenu == 1 then silent() end
-      if MultiMenu == 2 then tpselector() end
-      if MultiMenu == 3 then gunwar() end
-      if MultiMenu == 4 then speedfire() end
-      if MultiMenu == 5 then slow() end
-      if MultiMenu == 6 then speedspr() end
-      if MultiMenu == 7 then fpsup() end
-      if MultiMenu == 8 then wallhack() end
-      if MultiMenu == 9 then gmcar() end
-      if MultiMenu == 10 then slap() end
-      if MultiMenu == 11 then fh() end
-      if MultiMenu == 12 then ipadView() end
-      if MultiMenu == 13 then gm() end
-      if MultiMenu == 14 then hj() end
-      if MultiMenu == 15 then EXIT() end
-    end
-    SAMPMENU = -1
-  end
 
   Date = 19
   Month = 7
@@ -619,7 +621,7 @@ while (true) do
         gg.toast("Hello " .. username)
       end
     else
-      gg.alert("PLease use last version of LOGIN SCRIPT, Download = @Cheaters_Samp (in telegram)22")
+      gg.alert("⭕ Please use last version of LOGIN SCRIPT\n\n 💥 Download = @Cheaters_Samp (in telegram)") os.exit()
 
 
     end

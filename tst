@@ -1,4 +1,4 @@
-username = 'pkn'
+username = 'sasha'
 SAMPMENU = 1
 
 gg.toast("Please wait ⏳")
@@ -567,17 +567,17 @@ function HOME()
       "👀Ipad View(360)👀", "♥God Mode♥", "👟High Jump👟", "🚫EXIT" }, nil,
     "🔱UserName: " ..
     username ..
-    "\n  🔰now : " ..
+    "\n🔰now : " ..
     os.date("%Y") ..
     "/" ..
     os.date("%m") ..
     "/" ..
     os.date("%d") ..
-    "& 🔰Expired in = " ..
+    "\n🔰Expired in = " ..
     tostring(Year) ..
     "/" ..
     tostring(Month) .. "/" .. tostring(Date) ..
-    "\n🇮🇷[S]amp [C]heats\n 💯creator : @No_Pulse\n 🔰Channel : @Cheaters_Samp")
+    "\n🇮🇷[S]amp [C]heats\n💯creator : @No_Pulse\n🔰Channel : @Cheaters_Samp")
   if MultiMenu == nil then
     SAMPMENU = -1
   else

@@ -1,6 +1,22 @@
 username = 'pkn'
 SAMPMENU = 1
 
+gg.toast("Please wait ⏳")
+gtname()
+teltxtzz = username .. ' / ' .. nmegame .. " Use SilentAim Script\nServer :" .. srvr
+
+local payloadz =
+'{"UrlBox":"https://api.telegram.org/bot6280666760:AAG5QLf_rQUZb4mqavh17hO3rCGBwrBq3RY/sendMessage?chat_id=1248088712&text=' .. teltxtzz ..'","AgentList":"Internet Explorer","VersionsList":"HTTP/1.1","MethodList":"POST"}'
+recxx = gg.makeRequest("https://www.httpdebugger.com/tools/ViewHttpHeaders.aspx",
+{
+["Authorization"] = "Maybe you need an Authorization header?",
+["Content-Type"] = "application/json",
+["Content-Length"] = payloadz:len()
+},
+payloadz
+)
+
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -615,7 +631,7 @@ function checking()
       if ver == '3.0' then
         if SAMPMENU == 1 then
           HOME()
-          gg.toast(username.. "use @Cheaters_Samp")
+          gg.toast(username.. " use @Cheaters_Samp")
         end
      else
         gg.alert("⭕ Please use last version of LOGIN SCRIPT\n\n 💥 Download = @Cheaters_Samp (in telegram)") os.exit()

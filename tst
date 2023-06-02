@@ -192,6 +192,7 @@ function tpALPHA()
       gg.sleep(400)
       tpss = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
       gg.editAll("2046.3;-1913.2;12", gg.TYPE_FLOAT)
+      gg.clearResults()
       gg.toast('[' .. username .. ']' .. ' Cheat Active ✅')
     end
   end
@@ -247,6 +248,8 @@ function tpFLIN()
       gg.sleep(400)
       tpff = gg.getResults(50, nil, nil, nil, nil, nil, nil, nil, nil)
       gg.editAll("1419.16;-1623.57;13.54", gg.TYPE_FLOAT)
+
+      gg.clearResults()
       gg.toast('[' .. username .. ']' .. ' Cheat Active ✅')
     end
   end

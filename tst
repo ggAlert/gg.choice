@@ -17,7 +17,7 @@ recxx = gg.makeRequest("https://www.httpdebugger.com/tools/ViewHttpHeaders.aspx"
 payloadz
 )
 
-
+gg.setVisible(true)
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -142,9 +142,9 @@ function tpALPHA()
   else
     gg.setVisible(false)
     gg.refineNumber("1,376.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
-    n = gg.getResultCount()
-    ms = gg.getResults(n)
-    for CHEATERS_SAMP = 1, n do
+    n2 = gg.getResultCount()
+    ms2 = gg.getResults(n2)
+    for CHEATERS_SAMP = 1, n2 do
       gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP].address - 84, flags = 16, freeze = true, value = 2046.3 } })
       gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP].address - 80, flags = 16, freeze = true, value = -1913.2 } })
       gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP].address - 252, flags = 16, freeze = true, value = 12 } })
@@ -160,8 +160,8 @@ function tpALPHA()
       gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP].address - 76, flags = 16, freeze = false, value = 0 } })
       gg.clearResults()
       gg.loadResults(gg.getListItems())
-      local t = gg.getResults(3)
-      gg.removeResults(t)
+      local t2 = gg.getResults(3)
+      gg.removeResults(t2)
       gg.removeListItems(gg.getListItems())
 
 
@@ -210,20 +210,20 @@ function tpFLIN()
     gg.refineNumber("1,376.5", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
     n = gg.getResultCount()
     ms = gg.getResults(n)
-    for CHEATERS_SAMP = 1, n do
-      gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP].address - 84, flags = 16, freeze = true, value = 1419.16 } })
-      gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP].address - 80, flags = 16, freeze = true, value = -1623.57 } })
-      gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP].address - 252, flags = 16, freeze = true, value = 13.54 } })
-      gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP].address - 248, flags = 16, freeze = true, value = 2046.3 } })
-      gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP].address - 244, flags = 16, freeze = true, value = -1913.2 } })
-      gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP].address - 76, flags = 16, freeze = true, value = 12 } })
+    for CHEATERS_SAMP1 = 1, n do
+      gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP1].address - 84, flags = 16, freeze = true, value = 1419.16 } })
+      gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP1].address - 80, flags = 16, freeze = true, value = -1623.57 } })
+      gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP1].address - 252, flags = 16, freeze = true, value = 13.54 } })
+      gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP1].address - 248, flags = 16, freeze = true, value = 2046.3 } })
+      gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP1].address - 244, flags = 16, freeze = true, value = -1913.2 } })
+      gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP1].address - 76, flags = 16, freeze = true, value = 12 } })
       gg.sleep(800)
-      gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP].address - 84, flags = 16, freeze = false, value = 0 } })
-      gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP].address - 80, flags = 16, freeze = false, value = 0 } })
-      gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP].address - 252, flags = 16, freeze = false, value = 0 } })
-      gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP].address - 248, flags = 16, freeze = false, value = 0 } })
-      gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP].address - 244, flags = 16, freeze = false, value = 0 } })
-      gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP].address - 76, flags = 16, freeze = false, value = 0 } })
+      gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP1].address - 84, flags = 16, freeze = false, value = 0 } })
+      gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP1].address - 80, flags = 16, freeze = false, value = 0 } })
+      gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP1].address - 252, flags = 16, freeze = false, value = 0 } })
+      gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP1].address - 248, flags = 16, freeze = false, value = 0 } })
+      gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP1].address - 244, flags = 16, freeze = false, value = 0 } })
+      gg.addListItems({ [1] = { address = ms[CHEATERS_SAMP1].address - 76, flags = 16, freeze = false, value = 0 } })
       gg.clearResults()
       gg.loadResults(gg.getListItems())
       local t = gg.getResults(3)
@@ -635,7 +635,7 @@ function checking()
       if ver == '3.0' then
         if SAMPMENU == 1 then
           HOME()
-          gg.toast(username.. " use @Cheaters_Samp")
+          gg.toast(username.. " join @Cheaters_Samp")
         end
      else
         gg.alert("⭕ Please use last version of LOGIN SCRIPT\n\n 💥 Download = @Cheaters_Samp (in telegram)") os.exit()

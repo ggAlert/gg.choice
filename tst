@@ -581,52 +581,57 @@ function HOME()
 end
 
 
-while (true) do
-  gg.sleep(10)
-  if gg.isVisible(true) then
-    SAMPMENU = 1
-    gg.setVisible(false)
-  end
-
-
-
-  Date = 19
-  Month = 7
-  Year = 2023
-  expiremessage = "⭕Your Script Expired \n \n--> Please send message in Telegram (my id @No_Pulse) for get new version"
-
-  function check(t)
+function check(t)
     if t < 10 then t = "0" .. t end
     return t
   end
 
-  expiredate = Year .. check(Month) .. check(Date)
-  date = gg.makeRequest("http://www.guimp.com").headers["Date"][1]
-  month = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" }
-  for i = 1, 12 do
-    if month[i] == string.sub(date, 9, 11) then
-      if i < 10 then
-        i = "0" .. i
-      end
-      currentdate = string.sub(date, 13, 16) .. i .. string.sub(date, 6, 7)
+
+function checking()
+    gg.toast("Please wait ⏳")
+
+    Date = 19
+    Month = 7
+    Year = 2023
+    expiremessage = "⭕Your Script Expired \n \n--> Please send message in Telegram (my id @No_Pulse) for get new version"
+  
+    expiredate = Year .. check(Month) .. check(Date)
+    date = gg.makeRequest("http://www.guimp.com").headers["Date"][1]
+    month = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" }
+
+
+    for i = 1, 12 do
+      if month[i] == string.sub(date, 9, 11) then
+        if i < 10 then
+          i = "0" .. i
+         end
+        currentdate = string.sub(date, 13, 16) .. i .. string.sub(date, 6, 7)
+         end
     end
-  end
-  if tonumber(currentdate) >= tonumber(expiredate) then
-    gg.alert(expiremessage)
-    os.exit()
-  else
-    if ver == '3.0' then
-      if SAMPMENU == 1 then
-        HOME()
-        gg.toast("Hello " .. username)
-      end
+    if tonumber(currentdate) >= tonumber(expiredate) then
+      gg.alert(expiremessage)
+      os.exit()
     else
-      gg.alert("⭕ Please use last version of LOGIN SCRIPT\n\n 💥 Download = @Cheaters_Samp (in telegram)") os.exit()
-
-
+      if ver == '3.0' then
+        if SAMPMENU == 1 then
+          HOME()
+          gg.toast(username.. "use @Cheaters_Samp")
+        end
+     else
+        gg.alert("⭕ Please use last version of LOGIN SCRIPT\n\n 💥 Download = @Cheaters_Samp (in telegram)") os.exit()
+  
+  
+         end
     end
+end
 
+while (true) do
+  if gg.isVisible(true) then
+     SAMPMENU = 1
+     gg.setVisible(false)
+     checking()
   end
+
 end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

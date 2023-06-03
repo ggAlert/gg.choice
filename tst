@@ -1,4 +1,4 @@
-username = 'pkn'
+username = 'sasha'
 SAMPMENU = 1
 
 gg.toast("Please wait ⏳")

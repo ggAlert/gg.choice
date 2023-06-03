@@ -1,8 +1,16 @@
 username = 'sasha'
+
+
 SAMPMENU = 1
+
+
+
 
 gg.toast("Please wait ⏳")
 gtname()
+
+
+
 
 teltxtzz = '💥 NEW LOG 💥\n🟢 username = '.. username .. '\n🟢 ' .. nmegame .. " \n🟢 Server = " .. srvr.. "\n🟢 info = Use SilentAim Script"
 

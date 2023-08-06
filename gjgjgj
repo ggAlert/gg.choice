@@ -1272,7 +1272,7 @@ function checking()
     expiremessage = "⭕Your Script Expired \n \n--> Please send message in Telegram (my id @No_Pulse) for get new version"
   
     expiredate = Year .. check(Month) .. check(Date)
-    date = gg.makeRequest("http://www.guimp.com").headers["Date"][1]
+    date = gg.makeRequest("http://www.google.com").headers["Date"][1]
     month = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" }
 
 

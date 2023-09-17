@@ -1,0 +1,70 @@
+usernames = {'ali', 'mmd', 'hossein', 'reza'}
+
+
+--user expired  time
+ali = {3, 1 ,2024}
+
+gg.alert(tostring(pf[1]))
+
+gg.alert(tostring(ATuser))
+
+gg.alert('zanetoooooo')
+
+
+function check(t)
+    if t < 10 then t = "0" .. t end
+    return t
+  end
+
+
+function checking()
+    gg.toast("Checking Expired Time")
+
+    Date = ali[1]
+    Month = ali[2]
+    Year = ali[3]
+    expiremessage = "⭕Your Script Expired \n \n--> Please send message in Telegram (my id @No_Pulse) for get new version" 
+    expiredate = Year .. check(Month) .. check(Date)
+    date = gg.makeRequest("http://www.google.com").headers["Date"][1]
+    month = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" }
+
+
+    for i = 1, 12 do
+      if month[i] == string.sub(date, 9, 11) then
+        if i < 10 then
+          i = "0" .. i
+         end
+        currentdate = string.sub(date, 13, 16) .. i .. string.sub(date, 6, 7)
+         end
+    end
+    if tonumber(currentdate) >= tonumber(expiredate) then
+      gg.alert(expiremessage)
+      os.exit()
+    else
+        gg.alert("now : " ..
+        os.date("%Y") ..
+        "/" ..
+        os.date("%m") ..
+        "/" ..
+        os.date("%d") ..
+        "\n⏳Expired in : " ..
+        tostring(Year) ..
+        "/" ..
+        tostring(Month) .. "/" .. tostring(Date) ..
+        "\n💎Creator : [PKN] @No_Pulse\n🌎Channel : @Cheaters_Samp")
+
+    -- --   if ver == '3.1' then
+    -- --     if SAMPMENU == 1 then
+    --     --   HOME()
+    --       gg.toast(username.. " join @Cheaters_Samp")
+    --     end
+    --  else
+    --     gg.alert("⭕ Please use last version of LOGIN SCRIPT\n\n 💥 Download = @Cheaters_Samp (in telegram)") os.exit()
+  
+  
+    --      end
+    end
+end
+
+
+checking()

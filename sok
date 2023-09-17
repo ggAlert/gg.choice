@@ -8,6 +8,8 @@ gg.alert(tostring(pf[1]))
 
 gg.alert(tostring(ATuser))
 
+gg.alert('zanetoooooo')
+
 
 function check(t)
     if t < 10 then t = "0" .. t end
@@ -63,3 +65,6 @@ function checking()
     --      end
     end
 end
+
+
+checking()

@@ -1,12 +1,17 @@
-usernames = {'ali', 'mmd', 'hossein', 'reza'}
+gg.alert('helloooo')
+
+usernamezzzz = {'ali', 'mmd', 'hossein', 'reza'}
 
 
 --user expired  time
-ali = {3, 1 ,2024}
+ali = { 3, 1 , 2024}
 
---gg.alert(tostring(pf[1]))
+gg.alert('zanet')
 
---gg.alert(tostring(ATuser))
+
+gg.alert(tostring(pf[1]))
+
+gg.alert(tostring(ATuser))
 
 gg.alert('zanetoooooo')
 

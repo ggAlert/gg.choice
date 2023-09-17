@@ -9,7 +9,7 @@ ali = { 3, 1 , 2024}
 gg.alert('zanet')
 
 
-gg.alert(tostring(pf[1]))
+gg.alert(pf[1])
 
 gg.alert(tostring(ATuser))
 

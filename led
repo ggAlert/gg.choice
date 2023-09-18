@@ -1,0 +1,59 @@
+
+function check(t)
+    if t < 10 then t = "0" .. t end
+    return t
+  end
+
+
+function checking(dayZ, monthZ, yearZ)
+    gg.toast("Checking Expired Time")
+
+    Date = dayZ
+    Month = monthZ
+    Year = yearZ
+
+    
+    expiredate = Year .. check(Month) .. check(Date)
+    date = gg.makeRequest("http://www.google.com").headers["Date"][1]
+    month = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" }
+
+
+    for i = 1, 12 do
+      if month[i] == string.sub(date, 9, 11) then
+        if i < 10 then
+          i = "0" .. i
+         end
+        currentdate = string.sub(date, 13, 16) .. i .. string.sub(date, 6, 7)
+         end
+    end
+    if tonumber(currentdate) >= tonumber(expiredate) then
+      return false
+
+    else
+      return true
+    end
+end
+
+
+
+
+if ver == '3.2' then
+  username = 'parsa'
+
+  if checking(1, 1, 2023) then 
+    
+    gg.alert('benazam')
+    os.exit()
+
+
+  else
+    gg.alert("⭕Your Script Expired \n \n--> Please send message in Telegram (my id @No_Pulse) for get new version")
+    os.exit()
+  
+  end
+
+
+else
+  gg.alert("⭕ Please use last version of LOGIN SCRIPT\n\n 💥 Download in @Cheaters_Samp (telegram)") os.exit()
+
+end

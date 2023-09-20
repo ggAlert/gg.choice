@@ -1,0 +1,149 @@
+username = 'gholam'
+SAMPMENU = 1
+
+gg.toast("VIP Silent is Loading...")
+gg.setVisible(true)
+
+
+function EXIT()
+  gg.setVisible(true)
+  gg.toast("EXIT🚫")
+  gg.clearResults()
+  os.exit()
+end
+
+function silent()
+  WH1 = gg.choice({
+    "🔫🦰SILENT【HEAD】",
+    "▶️🚶🏾‍♂️SILENT【BODY】",
+    "⁦⁦                            🔙『BACK』🔙",
+  }, nil, "🇮🇷[S]amp [C]heats\n 💯creator : @No_Pulse\n 🔰Channel : @Cheaters_Samp")
+  if WH1 == 1 then
+    hahaha = gg.choice({
+        '⌜ ᴏɴ ⌟',
+        '⌜ ᴏғғ ⌟',
+        ' ⟪ ʙᴀᴄᴋ ⟫ ' }, nil,
+      '◤                                                       ◥\n               ◄ silent head ►               \n◣                                                       ◢')
+
+    if hahaha == 1 then silentHead() end
+    if hahaha == 2 then silentHeadoff() end
+    if hahaha == 3 then silent() end
+  end
+  if WH1 == 2 then
+    hah = gg.choice({
+        '⌜ ᴏɴ ⌟',
+        '⌜ ᴏғғ ⌟',
+        ' ⟪ ʙᴀᴄᴋ ⟫ ' }, nil,
+      '◤                                                       ◥\n               ◄ silent body ►               \n◣                                                       ◢')
+
+    if hah == 1 then silentBody() end
+    if hah == 2 then silentBodyoff() end
+    if hah == 3 then silent() end
+  end
+
+  if WH1 == 3 then HOME() end
+  SAMPMENU = -1
+end
+
+-- on head
+function silentHead()
+  gg.processResume()
+  gg.searchNumber("1,042,536,202", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+  gg.processResume()
+  gg.getResults(400, nil, nil, nil, nil, nil, nil, nil, nil)
+  gg.processResume()
+  gg.editAll("1,070,300,300", gg.TYPE_DWORD)
+  gg.toast('[' .. username .. ']' .. " Cheat Active✅")
+  gg.clearResults()
+  silent()
+end
+
+
+-- on body
+function silentBody()
+  data2 = 0
+  gg.setVisible(false)
+  settings2 = gg.prompt({
+      "type range: [1;55]" },
+    { nil },
+    { 'number' })
+
+  number2 = tonumber(settings2[1])
+  range2 = 45 + number2
+  gg.processResume()
+  gg.searchNumber("1,043,878,380", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+  gg.processResume()
+  gg.getResults(400, nil, nil, nil, nil, nil, nil, nil, nil)
+  gg.processResume()
+  gg.editAll("1,0" .. tostring(range2) .. ",350,350", gg.TYPE_DWORD)
+  gg.toast('[' .. username .. ']' .. " Cheat Active✅")
+  gg.clearResults()
+  silent()
+end
+
+
+
+-- off head
+function silentHeadoff()
+  gg.processResume()
+  gg.searchNumber("1,070,300,300", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+  gg.processResume()
+  gg.getResults(400, nil, nil, nil, nil, nil, nil, nil, nil)
+  gg.processResume()
+  gg.editAll("1,042,536,202", gg.TYPE_DWORD)
+  gg.toast('[' .. username .. ']' .. " Cheat Deactive✅")
+  gg.clearResults()
+  silent()
+end
+
+-- off body
+
+function silentBodyoff()
+  gg.processResume()
+  gg.searchNumber("1,0" .. tostring(range2) .. ",350,350", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
+  gg.processResume()
+  gg.getResults(400, nil, nil, nil, nil, nil, nil, nil, nil)
+  gg.processResume()
+  gg.editAll("1,043,878,380", gg.TYPE_DWORD)
+  gg.toast('[' .. username .. ']' .. " Cheat Deactive✅")
+  gg.clearResults()
+  silent()
+end
+
+function HOME()
+  MultiMenu = gg.choice(
+    { "💥Silent Aim💥" , "🚫EXIT" }, nil,
+    "============================\n🗣UserName: " ..
+    username ..
+    "\n============================\n⏳now : " ..
+    "\n💎Creator : [PKN] @No_Pulse\n🌎Channel : @Cheaters_Samp")
+  if MultiMenu == nil then
+    SAMPMENU = -1
+  else
+    if MultiMenu == 1 then silent() end
+    if MultiMenu == 2 then EXIT() end
+  end
+  SAMPMENU = -1
+end
+
+function STARTBABY()
+     if ver == '3.3' then
+        if SAMPMENU == 1 then
+          HOME()
+          gg.toast(username.. " join @Cheaters_Samp")
+        end
+     else
+        gg.alert("⭕ Please use last version of LOGIN SCRIPT\n\n 💥 Download = @Cheaters_Samp (in telegram)") os.exit()
+         end
+end
+     
+
+while (true) do
+  if gg.isVisible(true) then
+     SAMPMENU = 1
+     gg.setVisible(false)
+     STARTBABY()
+  end
+
+end
+

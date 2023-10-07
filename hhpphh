@@ -610,26 +610,8 @@ function check(t)
 function checking()
     gg.toast("Please wait ⏳")
 
-    Date = 2
-    Month = 11
-    Year = 2023
-    expiremessage = "⭕Your Script Expired \n \n--> Please send message in Telegram (my id @No_Pulse) for get new version"
-  
-    expiredate = Year .. check(Month) .. check(Date)
-    date = gg.makeRequest("http://getip.ir").headers["Date"][1]
-    month = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" }
-
-
-    for i = 1, 12 do
-      if month[i] == string.sub(date, 9, 11) then
-        if i < 10 then
-          i = "0" .. i
-         end
-        currentdate = string.sub(date, 13, 16) .. i .. string.sub(date, 6, 7)
-         end
-    end
-    if tonumber(currentdate) >= tonumber(expiredate) then
-      gg.alert(expiremessage)
+    
+    if 1 == 2 then
       os.exit()
     else
       if ver == '3.3' then

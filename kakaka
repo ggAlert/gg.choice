@@ -1,6 +1,0 @@
-username = 'gholam'
-SAMPMENU = 1
-gg.setVisible(true)
-gg.toast("کسننت")
-gg.clearResults()
-os.exit()

@@ -632,7 +632,7 @@ function checking()
       gg.alert(expiremessage)
       os.exit()
     else
-      if ver == '3.333' then
+      if ver == '3.3' then
         if SAMPMENU == 1 then
           HOME()
           gg.toast(username.. " join @Cheaters_Samp")

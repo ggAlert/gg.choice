@@ -610,11 +610,30 @@ function check(t)
 function checking()
     gg.toast("Please wait ⏳")
 
-    
-    if 1 == 2 then
+
+    Date = 3
+    Month = 2
+    Year = 2024
+    expiremessage = "⭕Your Script Expired \n \n--> Please send message in Telegram (my id @No_Pulse) for get new version"
+  
+    expiredate = Year .. check(Month) .. check(Date)
+    date = gg.makeRequest("http://www.google.com").headers["Date"][1]
+    month = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" }
+
+
+    for i = 1, 12 do
+      if month[i] == string.sub(date, 9, 11) then
+        if i < 10 then
+          i = "0" .. i
+         end
+        currentdate = string.sub(date, 13, 16) .. i .. string.sub(date, 6, 7)
+         end
+    end
+    if tonumber(currentdate) >= tonumber(expiredate) then
+      gg.alert(expiremessage)
       os.exit()
     else
-      if ver == '3.3' then
+      if ver == '3.1' then
         if SAMPMENU == 1 then
           HOME()
           gg.toast(username.. " join @Cheaters_Samp")
@@ -636,4 +655,4 @@ while (true) do
 
 end
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

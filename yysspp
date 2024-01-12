@@ -1,4 +1,4 @@
-username = 'sag'
+username = 'hossein'
 SAMPMENU = 1
 
 
@@ -612,8 +612,8 @@ function check(t)
 function checking()
     gg.toast("Please wait ⏳")
 
-    Date = 24
-    Month = 1
+    Date = 12
+    Month = 2
     Year = 2024
     expiremessage = "⭕Your Script Expired \n \n--> Please send message in Telegram (my id @No_Pulse) for get new version"
   

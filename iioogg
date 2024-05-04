@@ -379,4 +379,4 @@ function dv1()
   revert = gg.getResults(100000, nil, nil, nil, nil, nil, nil, nil, nil)
   gg.editAll('-0.565651', gg.TYPE_FLOAT)
   gg.toast('[' .. username .. ']' .. ' Cheat Active ✅')
-  gg.clearResul
+  gg.clearResu

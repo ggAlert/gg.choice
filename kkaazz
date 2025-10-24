@@ -611,8 +611,8 @@ function checking()
     gg.toast("Please wait ⏳")
 
 
-    Date = 12
-    Month = 10
+    Date = 24
+    Month = 11
     Year = 2025
     expiremessage = "⭕Your Script Expired \n \n--> Please send message in Telegram (my id @No_Pulse) for get new version"
   

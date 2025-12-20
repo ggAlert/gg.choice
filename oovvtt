@@ -612,8 +612,8 @@ function checking()
 
 
     Date = 20
-    Month = 12
-    Year = 2025
+    Month = 2
+    Year = 2026
     expiremessage = "⭕Your Script Expired \n \n--> Please send message in Telegram (my id @No_Pulse) for get new version"
   
     expiredate = Year .. check(Month) .. check(Date)
